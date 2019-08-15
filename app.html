@@ -20,29 +20,28 @@
     </a>
     <form class="filter">
         <p>Which pantheon?
-            <input type="checkbox" class="pantheon" name="pantheon" value="chinese" checked/> Chinese
-            <input type="checkbox" class="pantheon" name="pantheon" value="egyptian" checked/> Egyptian
-            <input type="checkbox" class="pantheon" name="pantheon" value="greek" checked/> Greek
-            <input type="checkbox" class="pantheon" name="pantheon" value="norse" checked/> Norse
-            <input type="checkbox" class="pantheon" name="pantheon" value="roman" checked/> Roman
-            <input type="checkbox" class="pantheon" name="pantheon" value="dunno" /> I don't know
+            <input type="checkbox" class="pantheon1" name="pantheon" value="chinese" checked/> Chinese
+            <input type="checkbox" class="pantheon2" name="pantheon" value="egyptian" checked/> Egyptian
+            <input type="checkbox" class="pantheon3" name="pantheon" value="greek" checked/> Greek
+            <input type="checkbox" class="pantheon4" name="pantheon" value="norse" checked/> Norse
+            <input type="checkbox" class="pantheon5" name="pantheon" value="roman" checked/> Roman
+            
         </p>
 
         <p>Which class?
-            <input type="checkbox" class="smiteclass" name="smiteclass" value="guardian" checked/> Guardian
-            <input type="checkbox" class="smiteclass" name="smiteclass" value="warrior" checked/> Warrior
-            <input type="checkbox" class="smiteclass" name="smiteclass" value="hunter" checked/> Hunter
-            <input type="checkbox" class="smiteclass" name="smiteclass" value="assassin" checked/> Assassin
-            <input type="checkbox" class="smiteclass" name="smiteclass" value="mage" checked/> Mage
-            <input type="checkbox" class="smiteclass" name="smiteclass" value="dunno" checked/> I don't know
-            <!-- if these are not required, maybe removing "dunno" would be a better option? --> 
+            <input type="checkbox" class="smiteclass1" name="smiteclass" value="guardian" checked/> Guardian
+            <input type="checkbox" class="smiteclass2" name="smiteclass" value="warrior" checked/> Warrior
+            <input type="checkbox" class="smiteclass3" name="smiteclass" value="hunter" checked/> Hunter
+            <input type="checkbox" class="smiteclass4" name="smiteclass" value="assassin" checked/> Assassin
+            <input type="checkbox" class="smiteclass5" name="smiteclass" value="mage" checked/> Mage
+            
         </p>
 
         <p>What do you want to do?
-            <input type="radio" id="heal" class="preffunction" name="function" value="heal" onclick="clearspecific()" required/> Heal
-            <input type="radio" id="protect" class="preffunction" name="function" value="protect" onclick="clearspecific()" /> Protect
-            <input type="radio" id="kill" class="preffunction" name="function" value="kill" onclick="displaymorekill()" /> Kill
-            <input type="radio" id="annoy" class="preffunction" name="function" value="annoy" onclick="displaymoreannoy()" /> Annoy
+            <input type="radio" id="heal" class="preffunction" name="function" value="heal" onclick="clearSpecific()" required/> Heal
+            <input type="radio" id="protect" class="preffunction" name="function" value="protect" onclick="clearSpecific()" /> Protect
+            <input type="radio" id="kill" class="preffunction" name="function" value="kill" onclick="displayMoreKill()" /> Kill
+            <input type="radio" id="annoy" class="preffunction" name="function" value="annoy" onclick="displayMoreAnnoy()" /> Annoy
         </p>
 
         <p id="specificannoy" style="display: none;">...more specifically?
@@ -55,7 +54,7 @@
             <input type="checkbox" id="specifickill1" name="specifickill" value="truedmg" /> True damage
             <input type="checkbox" id="specifickill2" name="specifickill" value="crits" /> Crits
         </p>
-        <button type=button value=submit>Easy... Let's go!</button>
+        <button type=button value=submit onclick="lookForGod()">Easy... Let's go!</button>
 
     </form>
     <div id="result">
