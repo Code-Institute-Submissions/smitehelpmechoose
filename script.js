@@ -58,4 +58,39 @@
             annoy.style.display = "none";
         }
     }
+
+
+
+    /*//checkbox group validation
+
+
+    var $checkboxgroup = $("input:checkbox[id^='option-']"); // name is not always helpful ;)
+
+    $checkboxgroup.prop('required', true);
+    if($checkboxgroup.is(":checked")){
+      $checkboxgroup.prop('required', false);
+    }*/
+
+
+
+    // definining main groups 
+    var healers = gods.filter((w) => w.preffunction[0] == 'heal' || w.preffunction[1] == 'heal');
+    var protecters = gods.filter((w) => w.preffunction[0] == 'protect' || w.preffunction[1] == 'protect');
+    var killers = gods.filter((w) => w.preffunction[0] == 'kill' || w.preffunction[1] == 'kill');
+    var annoyers = gods.filter((w) => w.preffunction[0] == 'annoy' || w.preffunction[1] == 'annoy');
+    
+    //generic main group rule for search
+    // var chosenFunction = gods.filter((w) => w.preffunction[0] == {preffered} || w.preffunction[1] == {preffered});
+
+    //loop that logs name of each annoyer
+    for (i = 0; i < annoyers.length; i++) {
+        console.log(annoyers[i]);
+        console.log(annoyers[i].name);
+    }
+
+
+
+    // choosing randomly if more than one god fulfills the criteria
+    //var randomGod = chosenFunction[Math.floor(Math.random() * healers.length)];
+    //console.log(randomGod);
     
