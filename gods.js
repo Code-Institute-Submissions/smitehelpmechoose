@@ -1,5 +1,5 @@
 // storing all gods in one object... nope, array for .filter() function
-// ordered by pantheon and then alphabetically
+// ordered alphabetically
 
 
 //misses godicon and note
@@ -38,8 +38,8 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: ["annoy", "kill"],
-    subfunction: ["just annoy", "execute"]
+    preffunction: ["kill"],
+    subfunction: "execute"
   },
   {
     name: "Aphrodite",

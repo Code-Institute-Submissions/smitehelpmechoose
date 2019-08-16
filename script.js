@@ -112,6 +112,8 @@ var chosenClass;
 var chosenFunction;
 var chosenSpecFunc;
 
+
+
 //MAIN FUNCTION triggered by submit button
 function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) {
 
@@ -165,7 +167,7 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
         }
     }
     // display warning if no function checked
-    if (!$('#heal').is(':checked') && !$('#protect').is(':checked') && !$('#kill').is(':checked') && !$('#annoy').is(':checked')) {
+    if (!$('#heal').is(':checked') && !$('#protect').is(':checked') && !$('#kill').is(':checked') && !$('#annoy').is(':checked') && !$('#mobility').is(':checked')) {
         alert('You have to tell me what you want to do!');
         return;
     }
@@ -207,26 +209,12 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
         }
     }
 
-    console.log(chosenSpecFunc);
+
     //--------it works!
 
     //generic main group rule for search
     // 1. filter by main function 
     var filterByFunc = gods.filter((g) => g.preffunction[0] == chosenFunction[0] || g.preffunction[1] == chosenFunction[0]);
-
-
-    //var filterByFuncArray = [];
-
-    /*   //loop that logs each god object filtered (I will need it at the very end)
-       for (i = 0; i < filterByFunc.length; i++) {
-           console.log(filterByFunc[i]);
-           console.log(filterByFunc[i].attacktype);
-           //filterByFuncArray.push(filterByFunc[i]);
-       }
-    */
-
-    //console.log(typeof filterByFuncArray);
-    //var filterByClass = filterByFunc.filter((g) => g.smiteclass == chosenClass[0] || g.smiteclass == chosenClass[1]);
 
     // 2. filter by pantheon 
     var filterByPantheon = filterByFunc.filter((g) => g.pantheon == chosenPantheon[0] || g.pantheon == chosenPantheon[1] || g.pantheon == chosenPantheon[2] || g.pantheon == chosenPantheon[3] || g.pantheon == chosenPantheon[4]);
@@ -255,17 +243,76 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
         var chosenGod = filterBySpecFunc[Math.floor(Math.random() * filterBySpecFunc.length)];
     }
 
-    return chosenGod;
+
+
+    function returnGodInfo() {
+        try {
+        // so I have chosenGod variable which is an Object 
+        //so take object.name
+        //remove spaces
+        //add as godicon value
+
+        //adding godicon value - based on transformed obj.name
+        function addImage() {
+            var noSpacesName = chosenGod.name.replace(/\s/g, "").replace(/'/, "");
+
+            Object.defineProperty(chosenGod, 'godicon', {
+                value: `icons/T_${noSpacesName}_Default_Icon.png`,
+                writable: false
+            });
+        }
+
+
+        addImage();
+        console.log(chosenGod.godicon);
+
+        //
+        console.log(chosenGod);
+            
+            
+            
+            
+            $('#result').html(`<h2>${chosenGod.name}</h2>
+                            
+                            <img src="${chosenGod.godicon}" class="godicon">
+                            <p class="parameters">
+                            <li>
+                            ${chosenGod.pantheon}
+                            ${chosenGod.smiteclass}
+                            ${chosenGod.attacktype}
+                            </li>
+                            </p>
+    
+                            <p>Function best as: 
+                            ${chosenGod.preffunction}</p>
+                            
+                            <p>Because you chose: ${chosenPantheon} <BR> ${chosenClass} <BR> ${chosenFunction} <BR> ${chosenSpecFunc}</p>
+
+    
+                            <p>Note: <BR>
+                            {note}</p>
+                            
+                            <h3>Enjoy!</h3>
+                            `);
+
+        }
+        catch (err) {
+            $('#result').html(`God fulfilling criteria not found. <BR> Broaden your search by choosing more filters.`)
+        }
+
+    }
+
+
+    returnGodInfo();
 
 }
 
-function returnGodInfo(chosenGod) {
-    return `This is ${chosenGod.name}`;
 
-}
+
 
 
 
 
 
 // add rules for when none pantheon/class are checked
+//add godicon to object
