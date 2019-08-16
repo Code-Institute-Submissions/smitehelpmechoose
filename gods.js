@@ -47,7 +47,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "heal",
+    preffunction: ["heal"],
     subfunction: ""
   },
   {
@@ -56,7 +56,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "physical",
     smiteclass: "hunter",
-    preffunction: "mobility",
+    preffunction: ["mobility"],
     subfunction: ""
   },
   {
@@ -65,7 +65,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: "truedmg"
   },
   {
@@ -74,7 +74,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "cc"
   },
   {
@@ -92,7 +92,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "just annoy"
   },
   {
@@ -101,7 +101,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -119,7 +119,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "heal",
+    preffunction: ["heal"],
     subfunction: ""
   },
   {
@@ -128,7 +128,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "physical",
     smiteclass: "hunter",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -137,7 +137,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "stun"
   },
   {
@@ -146,7 +146,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -155,7 +155,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "warrior",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -164,7 +164,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: "mobility",
+    preffunction: ["mobility"],
     subfunction: ""
   },
   {
@@ -173,7 +173,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "mobility",
+    preffunction: ["mobility"],
     subfunction: ""
   },
   {
@@ -182,7 +182,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "",
+    preffunction: [],
     subfunction: ""
   },
   {
@@ -191,7 +191,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: "protect",
+    preffunction: ["protect"],
     subfunction: ""
   },
   {
@@ -200,7 +200,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "warrior",
-    preffunction: "heal",
+    preffunction: ["heal"],
     subfunction: ""
   },
   {
@@ -209,7 +209,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "cc"
   },
   {
@@ -236,7 +236,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "cc"
   },
   {
@@ -245,7 +245,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "warrior",
-    preffunction: "protect",
+    preffunction: ["protect"],
     subfunction: ""
   },
   {
@@ -254,7 +254,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "physical",
     smiteclass: "hunter",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "stun"
   },
   {
@@ -281,7 +281,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: "",
+    preffunction: [],
     subfunction: ""
   },
   {
@@ -290,7 +290,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: "protect",
+    preffunction: ["protect"],
     subfunction: ""
   },
   {
@@ -299,7 +299,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "just annoy"
   },
   {
@@ -308,7 +308,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "physical",
     smiteclass: "hunter",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -317,7 +317,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -326,7 +326,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "physical",
     smiteclass: "hunter",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -335,7 +335,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -344,7 +344,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "warrior",
-    preffunction: "protect",
+    preffunction: ["protect"],
     subfunction: ""
   },
   {
@@ -353,7 +353,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "stun"
   },
   {
@@ -362,7 +362,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "warrior",
-    preffunction: "mobility",
+    preffunction: ["mobility"],
     subfunction: ""
   },
   {
@@ -371,7 +371,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "warrior",
-    preffunction: "",
+    preffunction: [],
     subfunction: ""
   },
   {
@@ -380,7 +380,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "",
+    preffunction: [],
     subfunction: ""
   },
   {
@@ -389,7 +389,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "cc"
   },
   {
@@ -416,7 +416,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -425,7 +425,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "mobility",
+    preffunction: ["mobility"],
     subfunction: ""
   },
   {
@@ -434,7 +434,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "",
+    preffunction: [],
     subfunction: ""
   },
   {
@@ -443,7 +443,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "physical",
     smiteclass: "hunter",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -452,7 +452,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "cc"
   },
   {
@@ -461,7 +461,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -479,7 +479,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "annoy",
+    preffunction: ["annoy"],
     subfunction: "just annoy"
   },
   {
@@ -488,7 +488,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: "mobility",
+    preffunction: ["mobility"],
     subfunction: ""
   },
   {
@@ -497,7 +497,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: "kill",
+    preffunction: ["kill"],
     subfunction: ""
   },
   {
@@ -506,7 +506,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "warrior",
-    preffunction: "",
+    preffunction: [],
     subfunction: ""
   },
   {
@@ -515,7 +515,7 @@ const gods = [
     attacktype: "Ranged",
     powertype: "physical",
     smiteclass: "hunter",
-    preffunction: "",
+    preffunction: [],
     subfunction: ""
   },
   {
@@ -534,7 +534,7 @@ const gods = [
     powertype: "magical",
     smiteclass: "guardian",
     preffunction: "annoy",
-    subfunction: ["cc", "stun"]
+    subfunction: "stun"
   }
 ];
 
