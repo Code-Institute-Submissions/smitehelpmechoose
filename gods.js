@@ -4,8 +4,7 @@
 
 //misses godicon and note
 
-const gods = [
-  {
+var gods = [{
     name: "Achilles",
     pantheon: "greek",
     attacktype: "Melee",
@@ -21,7 +20,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "hunter",
     preffunction: "kill",
-    subfunction: ""
+    subfunction: "crits"
   },
   {
     name: "Anubis",
@@ -102,7 +101,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "assassin",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Cerberus",
@@ -129,7 +128,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "hunter",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "crits"
   },
   {
     name: "Chronos",
@@ -147,7 +146,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "assassin",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Erlang Shen",
@@ -156,7 +155,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "warrior",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Fafnir",
@@ -218,8 +217,8 @@ const gods = [
     attacktype: "Ranged",
     powertype: "magical",
     smiteclass: "mage",
-    preffunction: ["annoy", "kill"],
-    subfunction: "just annoy"
+    preffunction: ["kill"],
+    subfunction: "truedmg"
   },
   {
     name: "Hel",
@@ -264,7 +263,7 @@ const gods = [
     powertype: "magical",
     smiteclass: "mage",
     preffunction: ["protect", "kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Jing Wei",
@@ -273,7 +272,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "hunter",
     preffunction: ["mobility", "kill"],
-    subfunction: ""
+    subfunction: "crits"
   },
   {
     name: "Jormungandr",
@@ -309,7 +308,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "hunter",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "crits"
   },
   {
     name: "Ne Zha",
@@ -318,7 +317,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "assassin",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "execute"
   },
   {
     name: "Neith",
@@ -327,7 +326,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "hunter",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "crits"
   },
   {
     name: "Nemesis",
@@ -335,7 +334,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "physical",
     smiteclass: "assassin",
-    preffunction: ["kill"],
+    preffunction: ["mobility"],
     subfunction: ""
   },
   {
@@ -408,7 +407,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "assassin",
     preffunction: ["mobility", "kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Scylla",
@@ -417,7 +416,7 @@ const gods = [
     powertype: "magical",
     smiteclass: "mage",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Serqet",
@@ -444,7 +443,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "hunter",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Sobek",
@@ -462,7 +461,7 @@ const gods = [
     powertype: "magical",
     smiteclass: "mage",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Sun Wukong",
@@ -498,7 +497,7 @@ const gods = [
     powertype: "magical",
     smiteclass: "mage",
     preffunction: ["kill"],
-    subfunction: ""
+    subfunction: "truedmg"
   },
   {
     name: "Tyr",
@@ -524,7 +523,7 @@ const gods = [
     attacktype: "Melee",
     powertype: "magical",
     smiteclass: "guardian",
-    preffunction: ["annoy", "kill"],
+    preffunction: ["annoy"],
     subfunction: "cc"
   },
   {
@@ -539,42 +538,3 @@ const gods = [
 ];
 
 
-/*const gods = [
-  
-  //chinese pantheon
-  {
-      name: "Ao Kuang",
-      godicon: "",
-      attacktype: "melee",
-      powertype: "magical",
-      pantheon: "Chinese",
-      smiteclass: "mage",
-      preffunction: "annoy",
-      subfunction: "just annoy",
-      
-  },
-  //egyptian pantheon
-    {
-        name: "Ra",
-        godicon: "ra.jpg",
-        attacktype: "ranged",
-        powertype: "magical",
-        pantheon: "Egyptian",
-        smiteclass: "mage",
-        preffunction: ["heal", "annoy"],
-        subfunction: "just annoy",
-        note: "1. Spamming [VEL] Laugh will definitely annoy your teammates early in the game \n 2. with Chibi Ra skin just play the game and your abilities will make everyone on both teams scream internally \n 3. With 40% reduction cooldowns and a bit of sniper reflex you will make opposing teams game a nightmare."
-    },
-
-    {
-        name: "Loki",
-        godicon: "loki.jpg",
-        attacktype: "melee",
-        powertype: "physical",
-        pantheon: "Norse",
-        smiteclass: "assassin",
-        preffunction: ["kill", "annoy"],
-        subfunction: "just annoy",
-        note: "It's just Loki. You know you want to play him. "
-    }
-];*/
