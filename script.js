@@ -42,6 +42,7 @@ function displayMoreAnnoy() {
 function clearSpecific() {
     var heal = document.getElementById("heal");
     var protect = document.getElementById("protect");
+    var mobility = document.getElementById("mobility");
     var kill = document.getElementById("specifickill");
     var annoy = document.getElementById("specificannoy");
 
@@ -53,7 +54,7 @@ function clearSpecific() {
     document.getElementById("specifickill2").checked = false;
 
     //hiding specific function filters
-    if (heal.checked == true || protect.checked == true) {
+    if (heal.checked == true || protect.checked == true || mobility.checked) {
         kill.style.display = "none";
         annoy.style.display = "none";
     }
@@ -63,6 +64,43 @@ function clearSpecific() {
 function clearAllCheckboxes() {
     $("#filter :input").prop("checked", false);
 }
+
+//tickingboxes need fixing 
+//select all checkboxes 
+/* 
+
+
+function tickAllBoxes() {
+    if ($('a[name=smiteclass]')) {
+    $(`input[name=smiteclass]`).prop("checked", true);
+    } else if ($('a[name=pantheon]')) {
+        $(`input[name=smitepantheon]`).prop("checked", true);
+    }
+}  */
+
+/* You should use onclick method because the function run once when the page is loaded and no button will be clicked then
+
+So you have to add an even which run every time the user press any key to add the changes to the div background
+
+So the function should be something like this
+
+htmlelement.onclick() = function(){
+    //Do the changes 
+}
+So your code has to look something like this :
+
+var box = document.getElementById("box");
+var yes = document.getElementById("yes");
+var no = document.getElementById("no");
+
+yes.onclick = function(){
+    box.style.backgroundColor = "red";
+}
+
+no.onclick = function(){
+    box.style.backgroundColor = "green";
+}
+This is meaning that when #yes button is clicked the color of the div is red and when the #no button is clicked the background is green */
 
 
 // choosing randomly if more than one god fulfills the criteria
@@ -146,13 +184,13 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
             }
         }
         // display warning if no specific function
-        if ($('#kill').is(':checked') && !$('#specifickill1').is(':checked') && !$('#specifickill2').is(':checked')) {
+        if ($('#kill').is(':checked') && !$('#specifickill1').is(':checked') && !$('#specifickill2').is(':checked') && !$('#specifickill3').is(':checked')) {
             alert('Choose how you want to kill your enemies');
             return;
         }
 
     }
-    else if($('#annoy').is(':checked')) {
+    else if ($('#annoy').is(':checked')) {
         //create array for specific function for ANNOY
 
         var specfunc = document.getElementsByName('specificannoy');
@@ -169,21 +207,7 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
         }
     }
 
-
-
-
-
-
-    //var yourFunction = gods.filter((g) => g.preffunction == chosenFunction[0]);
-
-
-    /*// definining main groups 
-        var healers = gods.filter((w) => w.preffunction[0] == 'heal' || w.preffunction[1] == 'heal');
-        var protecters = gods.filter((w) => w.preffunction[0] == 'protect' || w.preffunction[1] == 'protect');
-        var killers = gods.filter((w) => w.preffunction[0] == 'kill' || w.preffunction[1] == 'kill');
-        var annoyers = gods.filter((w) => w.preffunction[0] == 'annoy' || w.preffunction[1] == 'annoy');
-*/
-
+    console.log(chosenSpecFunc);
     //--------it works!
 
     //generic main group rule for search
@@ -208,31 +232,37 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
     var filterByPantheon = filterByFunc.filter((g) => g.pantheon == chosenPantheon[0] || g.pantheon == chosenPantheon[1] || g.pantheon == chosenPantheon[2] || g.pantheon == chosenPantheon[3] || g.pantheon == chosenPantheon[4]);
 
     //3. filter by class
-    var filterByClass = filterByPantheon.filter((g) => g.smiteclass == chosenClass[0] || g.smiteclass == chosenClass[1] || g.smiteclass == chosenClass[2] || g.smiteclass == chosenClass[3] || g.smiteclass== chosenClass[4]);
+    var filterByClass = filterByPantheon.filter((g) => g.smiteclass == chosenClass[0] || g.smiteclass == chosenClass[1] || g.smiteclass == chosenClass[2] || g.smiteclass == chosenClass[3] || g.smiteclass == chosenClass[4]);
 
     // 4. filter by specific function
-if (chosenSpecFunc.length > 0) {
-    var filterBySpecFunc = filterByClass.filter((g) => g.subfunction == chosenSpecFunc[0] || g.subfunction == chosenSpecFunc[1] || g.subfunction == chosenSpecFunc[2]);
-} else {
-    var filterBySpecFunc = filterByClass;
-}
+    if (chosenSpecFunc.length > 0) {
+        var filterBySpecFunc = filterByClass.filter((g) => g.subfunction == chosenSpecFunc[0] || g.subfunction == chosenSpecFunc[1] || g.subfunction == chosenSpecFunc[2]);
+    }
+    else {
+        var filterBySpecFunc = filterByClass;
+    }
     console.log(filterByFunc);
     console.log(filterByPantheon);
     console.log(filterByClass);
     console.log(filterBySpecFunc);
-    
+
     if (filterBySpecFunc.length === 1) {
         //only one god left
         var chosenGod = filterBySpecFunc[0];
-    } else {
+    }
+    else {
         //more than one god left as possible result 
         var chosenGod = filterBySpecFunc[Math.floor(Math.random() * filterBySpecFunc.length)];
     }
-    
-    console.log(chosenGod);
+
+    return chosenGod;
 
 }
 
+function returnGodInfo(chosenGod) {
+    return `This is ${chosenGod.name}`;
+
+}
 
 
 

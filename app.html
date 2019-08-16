@@ -9,6 +9,7 @@
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--<script src="jquery.csv.min.js"></script>-->
 <script type="text/javascript" src="gods.js"></script>
 <script type="text/javascript" src="script.js"></script>
 
@@ -18,13 +19,15 @@
     <a href="#explainme">
         <h4>How it works?</h4>
     </a>
-    <form class="filter">
+    <a href="#" onclick="clearAllCheckboxes()">Clear</a>
+    <form id="filter">
         <p>Which pantheon?
             <input type="checkbox" class="pantheon1" name="pantheon" value="chinese" checked/> Chinese
             <input type="checkbox" class="pantheon2" name="pantheon" value="egyptian" checked/> Egyptian
             <input type="checkbox" class="pantheon3" name="pantheon" value="greek" checked/> Greek
             <input type="checkbox" class="pantheon4" name="pantheon" value="norse" checked/> Norse
             <input type="checkbox" class="pantheon5" name="pantheon" value="roman" checked/> Roman
+            <a href="#" name="pantheon" onclick="tickAllBoxes()">Doesn't matter</a>
             
         </p>
 
@@ -34,6 +37,7 @@
             <input type="checkbox" class="smiteclass3" name="smiteclass" value="hunter" checked/> Hunter
             <input type="checkbox" class="smiteclass4" name="smiteclass" value="assassin" checked/> Assassin
             <input type="checkbox" class="smiteclass5" name="smiteclass" value="mage" checked/> Mage
+            <a href="#" name="smiteclass" onclick="tickAllBoxes()">Doesn't matter</a>
             
         </p>
 
@@ -42,6 +46,7 @@
             <input type="radio" id="protect" class="preffunction" name="function" value="protect" onclick="clearSpecific()" /> Protect
             <input type="radio" id="kill" class="preffunction" name="function" value="kill" onclick="displayMoreKill()" /> Kill
             <input type="radio" id="annoy" class="preffunction" name="function" value="annoy" onclick="displayMoreAnnoy()" /> Annoy
+            <input type="radio" id="mobility" class="preffunction" name="function" value="mobility"  onclick="clearSpecific()"/> Be mobile
         </p>
 
         <p id="specificannoy" style="display: none;">...more specifically?
@@ -53,6 +58,7 @@
         <p id="specifickill" style="display: none;">...more specifically?
             <input type="checkbox" id="specifickill1" name="specifickill" value="truedmg" /> True damage
             <input type="checkbox" id="specifickill2" name="specifickill" value="crits" /> Crits
+            <input type="checkbox" id="specifickill3" name="specifickill" value="execute" /> Execute
         </p>
         <button type=button value=submit onclick="lookForGod()">Easy... Let's go!</button>
 

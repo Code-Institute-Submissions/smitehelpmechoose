@@ -12,7 +12,7 @@ const gods = [
     powertype: "physical",
     smiteclass: "warrior",
     preffunction: "kill",
-    subfunction: ""
+    subfunction: "execute"
   },
   {
     name: "Anhur",
@@ -39,7 +39,7 @@ const gods = [
     powertype: "magical",
     smiteclass: "mage",
     preffunction: ["annoy", "kill"],
-    subfunction: "just annoy"
+    subfunction: ["just annoy", "execute"]
   },
   {
     name: "Aphrodite",
