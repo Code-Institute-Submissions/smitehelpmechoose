@@ -1,0 +1,110 @@
+body {
+    font-family: 'Hind', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Goblin One', cursive;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.explainme {
+    text-align: center;
+}
+
+.clear,
+.whatever {
+    text-align: right;
+}
+
+form {
+    line-height: 40px;
+}
+
+.searchicon {
+    width: 90px;
+    float: center;
+}
+
+input[type=checkbox]+label,
+input[type=radio]+label {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: solid 1px red;
+    line-height: 20px;
+    text-align: center;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked+label,
+input[type=radio]:checked+label {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+
+
+button {
+    margin: auto;
+    display: block;
+    height: 60px;
+    width: 250px;
+
+}
+
+#filter {}
+
+#result {}
+
+#explainme {
+    margin-top: 30px;
+}
+
+.godicon {
+    float: left;
+    width: 100px;
+}
+
+.parameters {
+    display: block;
+    border: 1px solid black;
+    background-color: mint;
+}
+
+li.parameters {
+    display: block;
+    border: 1px solid black;
+    background-color: purple;
+}
+
+.youchose {
+    display: block;
+    background-color: pink;
+}
+
+.note {
+    background-color: yellow;
+}
+
+
+
+
+
+/*800px breaking point */
