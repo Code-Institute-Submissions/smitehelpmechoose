@@ -23,7 +23,7 @@
     </a>
     <a href="#" onclick="clearAllCheckboxes()" class="clear">Clear</a>
     <form id="filter">
-        <p>Which pantheon?<br>
+        <p><h3>Which pantheon?</h3><br>
             <input type="checkbox" id="whateverpantheon" name="pantheon" onclick="tickAllBoxes(this)"><label for="whateverpantheon">Doesn't matter</label>
             <input type="checkbox" id="chinese" class="pantheon1" name="pantheon" value="chinese" checked/> <label for="chinese"><img src="pantheons/chinese.png" class="searchicon"><br>Chinese</label>
             <input type="checkbox" id="egyptian" class="pantheon2" name="pantheon" value="egyptian" checked/> <label for="egyptian"><img src="pantheons/egyptian.png" class="searchicon"><br>Egyptian</label>
@@ -34,7 +34,7 @@
 
         </p>
 
-        <p>Which class?<br>
+        <p><h3>Which class?</h3><br>
             <input type="checkbox" id="whateverclass" name="smiteclass" onclick="tickAllBoxes(this)"><label for="whateverclass">Doesn't matter</label>
             <input type="checkbox" id="guardian" class="smiteclass1" name="smiteclass" value="guardian" checked/> <label for="guardian"><img src="classes/guardian.png" class="searchicon"><br>Guardian</label>
             <input type="checkbox" id="warrior" class="smiteclass2" name="smiteclass" value="warrior" checked/> <label for="warrior"><img src="classes/warrior.png" class="searchicon"><br>Warrior</label>
@@ -44,7 +44,7 @@
 
         </p>
 
-        <p>What do you want to do?<br>
+        <p><h3>What do you want to do?</h3><br>
             <input type="radio" id="heal" class="preffunction" name="function" value="heal" onclick="clearSpecific()" required/><label for="heal"><img src="functions/heal.png" class="searchicon"><br>Heal</label>
             <input type="radio" id="protect" class="preffunction" name="function" value="protect" onclick="clearSpecific()" /> <label for="protect"><img src="functions/protect.png" class="searchicon"><br> Protect</label>
             <input type="radio" id="kill" class="preffunction" name="function" value="kill" onclick="displayMoreKill()" /> <label for="kill"><img src="functions/kill.png" class="searchicon"><br>Kill</label>

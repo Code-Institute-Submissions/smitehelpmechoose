@@ -231,26 +231,40 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
             }
             //trigger the function
             addImage();
+            
+            //add link to official gamepedia god's page
+            function linkToWiki() {
+                var underscoreName = chosenGod.name.replace(/\s/g, "_").replace(/'/, "%27");
+                //add link to the page
+                Object.defineProperty(chosenGod, 'wikipage', {
+                    value: `https://smite.gamepedia.com/${underscoreName}`,
+                    writable: false
+                });
+            }
+            //trigger the function
+            linkToWiki();
 
             $('#result').html(`
             
-                            <sub>Available ${filterBySpecFunc.length} god(s). <a href="#" onclick="lookForGod()">Reroll?</a></sub> 
+                            <p style="text-align: center; color: white; font-size: 0.8em">Available ${filterBySpecFunc.length} god(s). Click the button above to reroll</p> 
+                            <div class="result"> 
                             <h2>${chosenGod.name}</h2>
                             
                             <img src="${chosenGod.godicon}" class="godicon">
                             
-                            <li class="parameters">
-                            <ul>${chosenGod.pantheon}</ul>
-                            <ul>${chosenGod.smiteclass}</ul>
-                            <ul>${chosenGod.attacktype}</ul>
-                            </li>
+                            <p class="parameters">
+                            ${chosenGod.pantheon} &#8226; ${chosenGod.smiteclass} &#8226; ${chosenGod.attacktype}
+                            
+                            <br>
+                            
+                            <a href="${chosenGod.wikipage}#Abilities" target="_blank">Read more about this god's abilities on gamepedia</a>
                             
                             
-                            <p class="youchose">Because you chose: ${chosenPantheon} <BR> ${chosenClass} <BR> ${chosenFunction} <BR> ${chosenSpecFunc}</p>
-                            <p class="note">Note: <BR>
-                            {note}</p>
+                            <p class="youchose">Because you chose following values: ${chosenPantheon} | ${chosenClass} | ${chosenFunction} | ${chosenSpecFunc}</p>
+                            <p class="note">{note}</p>
                             
-                            <h3>Enjoy!</h3>
+                            <h3 style="text-align: center;">Enjoy!</h3>
+                            </div>
                             `);
 
 
@@ -260,21 +274,6 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
         catch (err) {
             $('#result').html(`God fulfilling criteria not found. <BR> Broaden your search by choosing more filters.`)
         }
-
     }
-
-
     returnGodInfo();
-
 }
-
-
-
-
-
-
-
-
-//scroll to view needs fixing 
-//tickallboxes needs rewriting
-//style for 320px and 600px width needed
