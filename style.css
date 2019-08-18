@@ -36,11 +36,20 @@ a {
     text-align: center;
 }
 
-.clear,
-.whatever {
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
+.clear {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-left: auto;
+    padding-right: 15px;
+    width: auto;
+    border: 1px yellow solid;
+}
+
+#filter {
+    padding: 20px;
 }
 
 form {
@@ -52,20 +61,6 @@ form {
     display: none;
 }
 
-input[type=checkbox]+label,
-input[type=radio]+label,
-input[type=checkbox]+label>a {
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    width: 80px;
-    height: auto;
-    display: inline-block;
-    border: solid 1px #FFF975;
-    line-height: 20px;
-    text-align: center;
-}
-
 input[type=checkbox],
 input[type=radio] {
     opacity: 0;
@@ -73,13 +68,25 @@ input[type=radio] {
     left: 40px;
 }
 
+input[type=checkbox]+label,
+input[type=radio]+label {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 80px;
+    height: auto;
+    display: inline-block;
+    border: solid 1px #FFF975;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 input[type=checkbox]:checked+label,
 input[type=radio]:checked+label {
     -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
+    background-image: url('buttonbackground.jpg');
 }
-
 
 button {
     margin: auto;
@@ -91,11 +98,7 @@ button {
     background-color: #202E31;
 }
 
-#filter {}
-
-#result {
-    
-}
+/* styles for result elements */
 
 .result {
     border: 1px solid white;
@@ -107,6 +110,7 @@ button {
 
 #explainme {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -120,7 +124,7 @@ button {
 .parameters {
     display: block;
     border: 1px solid black;
-    width: 300px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -135,48 +139,64 @@ button {
     display: block;
 }
 
+/* media queries */
 
 @media only screen and (min-width: 425px) {
     .searchicon {
-        display: inline;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
         width: 90px;
-        float: center;
         width: 50px;
     }
 
     input[type=checkbox]+label,
     input[type=radio]+label {
-        -webkit-filter: grayscale(100%);
-        /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-        display: inline-block;
         width: 80px;
         height: 80px;
-        border: solid 1px #FFF975;
-        line-height: 20px;
-        text-align: center;
+    }
+
+    #whateverclass+label,
+    #whateverpantheon+label {
+        display: inline-block;
+        height: 20px;
     }
 }
 
+
 @media only screen and (min-width: 1024px) {
     body {
+        position: relative;
         width: 1000px;
         margin: 0 auto;
     }
     .searchicon {
-        display: inline;
+        display: block;
         width: 90px;
         float: center;
     }
+    .specificicon {
+        width: 50px;
+    }
     input[type=checkbox]+label,
     input[type=radio]+label {
-        -webkit-filter: grayscale(100%);
-        /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
         display: inline-block;
         width: 120px;
         height: 120px;
-        border: solid 1px #FFF975;
         line-height: 20px;
-        text-align: center;
     }
+    input[type=checkbox]+label[for^="specifickill"],
+    input[type=checkbox]+label[for^="specificannoy"] {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        line-height: 20px;
+    }
+    
+    #specifickill,
+    #specificannoy {
+        position: relative;
+        left: 300px;
+    }
+}
