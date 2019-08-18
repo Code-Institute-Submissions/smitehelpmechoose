@@ -186,7 +186,7 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
 
     //generic main group rule for search
     // 1. filter by main function 
-    var filterByFunc = gods.filter((g) => g.preffunction[0] == chosenFunction[0] || g.preffunction[1] == chosenFunction[0]);
+    var filterByFunc = gods.filter((g) => g.preffunction1 == chosenFunction[0] || g.preffunction2 == chosenFunction[0]);
 
     // 2. filter by pantheon 
     var filterByPantheon = filterByFunc.filter((g) => g.pantheon == chosenPantheon[0] || g.pantheon == chosenPantheon[1] || g.pantheon == chosenPantheon[2] || g.pantheon == chosenPantheon[3] || g.pantheon == chosenPantheon[4]);
@@ -196,15 +196,15 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
 
     // 4. filter by specific function
     if (chosenSpecFunc.length > 0) {
-        var filterBySpecFunc = filterByClass.filter((g) => g.subfunction == chosenSpecFunc[0] || g.subfunction == chosenSpecFunc[1] || g.subfunction == chosenSpecFunc[2]);
+        var filterBySpecFunc = filterByClass.filter((g) => g.subfunction1 == chosenSpecFunc[0] || g.subfunction1 == chosenSpecFunc[1] || g.subfunction1 == chosenSpecFunc[2] || g.subfunction2 == chosenSpecFunc[0] || g.subfunction2 == chosenSpecFunc[1] || g.subfunction2 == chosenSpecFunc[2]);
     }
     else {
         var filterBySpecFunc = filterByClass;
     }
-    console.log(filterByFunc);
-    console.log(filterByPantheon);
-    console.log(filterByClass);
-    console.log(filterBySpecFunc);
+    //console.log(filterByFunc);
+    //console.log(filterByPantheon);
+    //console.log(filterByClass);
+    //console.log(filterBySpecFunc);
 
     if (filterBySpecFunc.length === 1) {
         //only one god left
