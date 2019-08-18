@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Help me choose! Smite app for the undecided</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="gods.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Goblin+One|Hind|Montserrat:400i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<body>
+    <h1>Help me choose!</h1>
+    <h2>Smite companion app for the undecided</h2>
+    <a href="#explainme" class="explainme">
+        <h4>How it works?</h4>
+    </a>
+    <a href="#" onclick="clearAllCheckboxes()" class="clear">Clear</a>
+    <form id="filter">
+        <p>Which pantheon?<br>
+            <input type="checkbox" id="chinese" class="pantheon1" name="pantheon" value="chinese" checked/> <label for="chinese"><img src="pantheons/chinese.png" class="searchicon"><br>Chinese</label>
+            <input type="checkbox" id="egyptian" class="pantheon2" name="pantheon" value="egyptian" checked/> <label for="egyptian"><img src="pantheons/egyptian.png" class="searchicon"><br>Egyptian</label>
+            <input type="checkbox" id="greek" class="pantheon3" name="pantheon" value="greek" checked/> <label for="greek"><img src="pantheons/greek.png" class="searchicon"><br>Greek</label>
+            <input type="checkbox" id="norse" class="pantheon4" name="pantheon" value="norse" checked/> <label for="norse"><img src="pantheons/norse.png" class="searchicon"><br>Norse</label>
+            <input type="checkbox" id="roman" class="pantheon5" name="pantheon" value="roman" checked/> <label for="roman"><img src="pantheons/roman.png" class="searchicon"><br>Roman</label>
+            <input type="checkbox" id="whateverpantheon"><label for="whateverpantheon"><a href="#" id="w1" name="smitepantheon" class="whatever">Doesn't matter</a></label>
+            
+        </p>
+
+        <p>Which class?<br>
+            <input type="checkbox" id="guardian" class="smiteclass1" name="smiteclass" value="guardian" checked/> <label for="guardian"><img src="classes/guardian.png" class="searchicon"><br>Guardian</label>
+            <input type="checkbox" id="warrior" class="smiteclass2" name="smiteclass" value="warrior" checked/> <label for="warrior"><img src="classes/warrior.png" class="searchicon"><br>Warrior</label>
+            <input type="checkbox" id="hunter" class="smiteclass3" name="smiteclass" value="hunter" checked/> <label for="hunter"><img src="classes/hunter.png" class="searchicon"><br>Hunter</label>
+            <input type="checkbox" id="assassin" class="smiteclass4" name="smiteclass" value="assassin" checked/> <label for="assassin"><img src="classes/assassin.png" class="searchicon"><br>Assassin</label>
+            <input type="checkbox" id="mage" class="smiteclass5" name="smiteclass" value="mage" checked/> <label for="mage"><img src="classes/mage.png" class="searchicon"><br>Mage</label>
+            <a href="#" name="smiteclass" class="whatever" >Doesn't matter</a></span>
+            
+        </p>
+
+        <p>What do you want to do?<br>
+            <input type="radio" id="heal" class="preffunction" name="function" value="heal" onclick="clearSpecific()" required/><label for="heal"><img src="functions/heal.png" class="searchicon"><br>Heal</label>
+            <input type="radio" id="protect" class="preffunction" name="function" value="protect" onclick="clearSpecific()" /> <label for="protect"><img src="functions/protect.png" class="searchicon"><br> Protect</label>
+            <input type="radio" id="kill" class="preffunction" name="function" value="kill" onclick="displayMoreKill()" /> <label for="kill"><img src="functions/kill.png" class="searchicon"><br>Kill</label>
+            <input type="radio" id="annoy" class="preffunction" name="function" value="annoy" onclick="displayMoreAnnoy()" /> <label for="annoy"><img src="functions/annoy.png" class="searchicon"><br>Annoy</label>
+            <input type="radio" id="mobility" class="preffunction" name="function" value="mobility"  onclick="clearSpecific()"/> <label for="mobility"><img src="functions/mobility.png" class="searchicon"><br>Be mobile</label>
+        </p>
+
+        <p id="specificannoy" style="display: none;">...more specifically?<br>
+            <input type="checkbox" id="specificannoy1" name="specificannoy" value="cc" /> <label for="specificannoy1">CC</label>
+            <input type="checkbox" id="specificannoy2" name="specificannoy" value="stun" /> <label for="specificannoy2">Stuns</label>
+            <input type="checkbox" id="specificannoy3" name="specificannoy" value="just annoy" /> <label for="specificannoy3">Just annoy</label>
+        </p>
+
+        <p id="specifickill" style="display: none;">...more specifically?<br>
+            <input type="checkbox" id="specifickill1" name="specifickill" value="truedmg" /> <label for="specifickill1">True damage</label>
+            <input type="checkbox" id="specifickill2" name="specifickill" value="crits" /> <label for="specifickill2">Crits</label>
+            <input type="checkbox" id="specifickill3" name="specifickill" value="execute" /> <label for="specifickill3">Execute</label>
+        </p>
+        <button type=button value=submit onclick="lookForGod()">Easy... Let's go!</button>
+
+    </form>
+    <div id="result">
+
+    </div>
+
+    <div id="explainme">
+        Explanation will come later
+    </div>
+
+</body>
+
+</html>
