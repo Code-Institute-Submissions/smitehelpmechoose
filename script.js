@@ -65,47 +65,19 @@ function clearAllCheckboxes() {
     $("#filter :input").prop("checked", false);
 }
 
-//tickingboxes need fixing 
-//select all checkboxes 
-/* 
-
 
 function tickAllBoxes() {
-    if ($('a[name=smiteclass]')) {
-    $(`input[name=smiteclass]`).prop("checked", true);
-    } else if ($('a[name=pantheon]')) {
-        $(`input[name=smitepantheon]`).prop("checked", true);
-    }
-}  */
+    var target = event.target;
+    var name = $(target).prop('name');
+    $(`input[name='${name}']`).prop("checked", true);
+};
 
-/* You should use onclick method because the function run once when the page is loaded and no button will be clicked then
 
-So you have to add an even which run every time the user press any key to add the changes to the div background
-
-So the function should be something like this
-
-htmlelement.onclick() = function(){
-    //Do the changes 
-}
-So your code has to look something like this :
-
-var box = document.getElementById("box");
-var yes = document.getElementById("yes");
-var no = document.getElementById("no");
-
-yes.onclick = function(){
-    box.style.backgroundColor = "red";
-}
-
-no.onclick = function(){
-    box.style.backgroundColor = "green";
-}
-This is meaning that when #yes button is clicked the color of the div is red and when the #no button is clicked the background is green */
 
 
 // choosing randomly if more than one god fulfills the criteria
 //var randomGod = chosenFunction[Math.floor(Math.random() * healers.length)];
-//console.log(randomGod);
+
 
 var chosenPantheon;
 var chosenClass;
@@ -247,54 +219,43 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
 
     function returnGodInfo() {
         try {
-        // so I have chosenGod variable which is an Object 
-        //so take object.name
-        //remove spaces
-        //add as godicon value
+            //adding godicon value - based on transformed obj.name
+            function addImage() {
+                //remove spaces and single quotes from name
+                var noSpacesName = chosenGod.name.replace(/\s/g, "").replace(/'/, "");
+                //add godicon key and its value
+                Object.defineProperty(chosenGod, 'godicon', {
+                    value: `gods/T_${noSpacesName}_Default_Icon.png`,
+                    writable: false
+                });
+            }
+            //trigger the function
+            addImage();
 
-        //adding godicon value - based on transformed obj.name
-        function addImage() {
-            var noSpacesName = chosenGod.name.replace(/\s/g, "").replace(/'/, "");
-
-            Object.defineProperty(chosenGod, 'godicon', {
-                value: `icons/T_${noSpacesName}_Default_Icon.png`,
-                writable: false
-            });
-        }
-
-
-        addImage();
-        console.log(chosenGod.godicon);
-
-        //
-        console.log(chosenGod);
+            $('#result').html(`
             
-            
-            
-            
-            $('#result').html(`<h2>${chosenGod.name}</h2>
+                            <sub>Available ${filterBySpecFunc.length} god(s). <a href="#" onclick="lookForGod()">Reroll?</a></sub> 
+                            <h2>${chosenGod.name}</h2>
                             
                             <img src="${chosenGod.godicon}" class="godicon">
-                            <p class="parameters">
-                            <li>
-                            ${chosenGod.pantheon}
-                            ${chosenGod.smiteclass}
-                            ${chosenGod.attacktype}
-                            </li>
-                            </p>
-    
-                            <p>Function best as: 
-                            ${chosenGod.preffunction}</p>
                             
-                            <p>Because you chose: ${chosenPantheon} <BR> ${chosenClass} <BR> ${chosenFunction} <BR> ${chosenSpecFunc}</p>
-
-    
-                            <p>Note: <BR>
+                            <li class="parameters">
+                            <ul>${chosenGod.pantheon}</ul>
+                            <ul>${chosenGod.smiteclass}</ul>
+                            <ul>${chosenGod.attacktype}</ul>
+                            </li>
+                            
+                            
+                            <p class="youchose">Because you chose: ${chosenPantheon} <BR> ${chosenClass} <BR> ${chosenFunction} <BR> ${chosenSpecFunc}</p>
+                            <p class="note">Note: <BR>
                             {note}</p>
                             
                             <h3>Enjoy!</h3>
                             `);
 
+
+
+            $("#result")[0].scrollIntoView();
         }
         catch (err) {
             $('#result').html(`God fulfilling criteria not found. <BR> Broaden your search by choosing more filters.`)
@@ -314,5 +275,6 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
 
 
 
-// add rules for when none pantheon/class are checked
-//add godicon to object
+//scroll to view needs fixing 
+//tickallboxes needs rewriting
+//style for 320px and 600px width needed
