@@ -125,13 +125,15 @@ Gods functions and subfunctions, as well as .js file storing this data are creat
 
 This project wouldn't be born without HiRez developers and creators who give life to SMITE and its community. 
 
-It also wouldn't be nearly as functional as it is without Code Institute, its Slack community and my mentor Seun Owonikoko. 
+It also wouldn't be nearly as functional as it is now, without Code Institute, its Slack community and my mentor Seun Owonikoko. 
 
 Special thanks to Jakub Kołaciński who over 192 hours of playtime ago accepted my invitation to SMITE and hadn't rage quit yet :)
 
 ### Disclaimer 
 This is intended for entertainment purposes. I’m not responsible for your bad KDA ratio ;)
+
 Not affiliated with HiRez or SMITE. 
+
 From fan to fans. 
 
 Code Institute - Milestone Project 2 - Interactive Frontend Development
