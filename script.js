@@ -57,7 +57,7 @@ function clearSpecific() {
     document.getElementById("specifickill2").checked = false;
 
     // Hide specific function filters
-    if (heal.checked == true || protect.checked == true || mobility.checked) {
+    if (heal.checked || protect.checked || mobility.checked) {
         kill.style.display = "none";
         annoy.style.display = "none";
     }
@@ -65,7 +65,12 @@ function clearSpecific() {
 
 // Clear all selection on the entire page
 function clearAllCheckboxes() {
+    var kill = document.getElementById("specifickill");
+    var annoy = document.getElementById("specificannoy");
+    
     $("#filter :input").prop("checked", false);
+    kill.style.display = "none";
+    annoy.style.display = "none";
 }
 
 // Select all boxes in the filter
@@ -238,9 +243,9 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
             writable: false
         });
     }
-    
-    var displayChosen = chosenPantheon + " | " + chosenClass  + " | " + chosenFunction  + " | " +  chosenSpecFunc;
-    
+
+    var displayChosen = chosenPantheon + " | " + chosenClass + " | " + chosenFunction + " | " + chosenSpecFunc;
+
     function returnGodInfo() {
         try {
             //trigger the function adding the image
