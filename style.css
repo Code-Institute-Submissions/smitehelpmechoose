@@ -5,6 +5,7 @@ body {
 }
 
 h1 {
+    margin-top: 20px;
     text-align: center;
     font-family: 'Goblin One', cursive;
 }
@@ -12,16 +13,19 @@ h1 {
 h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 5px;
+    font-size: 1.2em;
+    margin-top: 15px;
     margin-bottom: 5px;
 }
 
 h4 {
     color: white;
+    font-size: 1.2em;
 }
 
 p {
@@ -30,6 +34,11 @@ p {
 
 a {
     color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}
+a:visited, a:active {
+    text-decoration: none;
 }
 
 .explainme {
@@ -50,6 +59,7 @@ a {
 
 #filter {
     padding: 20px;
+    text-indent: 0px;
 }
 
 form {
@@ -57,9 +67,20 @@ form {
     margin-top: 0px;
 }
 
+/*.wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 15px 0px;
+}*/
+
 .searchicon {
     display: none;
 }
+
+/* makes checkbox invisible */
+/* position relative 40px to prevent it from taking space */
 
 input[type=checkbox],
 input[type=radio] {
@@ -68,6 +89,7 @@ input[type=radio] {
     left: 40px;
 }
 
+/* visible part of the checkbox*/
 input[type=checkbox]+label,
 input[type=radio]+label {
     -webkit-filter: grayscale(100%);
@@ -79,6 +101,9 @@ input[type=radio]+label {
     line-height: 20px;
     text-align: center;
     vertical-align: middle;
+    text-indent: 0px;
+    /* adding spacing between the items on mobile */
+    margin: 5px 0px 0px 0px;
 }
 
 input[type=checkbox]:checked+label,
@@ -88,14 +113,14 @@ input[type=radio]:checked+label {
     background-image: url('buttonbackground.jpg');
 }
 
-button {
-    margin: auto;
+/* overwriting Boostrap class */
+.btn {
+    margin: 0 auto;
     display: block;
     height: 60px;
-    width: 250px;
-    color: #FFF975;
     border: 2px solid #CA965C;
-    background-color: #202E31;
+    color: #FFF975;
+    width: 200px;
 }
 
 /* styles for result elements */
@@ -106,19 +131,15 @@ button {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #030e26;
 }
-
-#explainme {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 
 .godicon {
     display: block;
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .parameters {
@@ -137,6 +158,24 @@ button {
 
 .note {
     display: block;
+}
+
+/* explanation div at the bottom */
+
+#explainme {
+    width: 80%;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#explainme>i {
+    font-family: 'Montserrat', sans-serif;
+    color: #94cbf2;
+    font-size: 1.1em;
+    font-style: normal;
 }
 
 /* media queries */
@@ -163,7 +202,6 @@ button {
         height: 20px;
     }
 }
-
 
 @media only screen and (min-width: 1024px) {
     body {
@@ -193,7 +231,7 @@ button {
         height: 75px;
         line-height: 20px;
     }
-    
+
     #specifickill,
     #specificannoy {
         position: relative;
