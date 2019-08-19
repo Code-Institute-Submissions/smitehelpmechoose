@@ -23,7 +23,7 @@ function displayMoreKill() {
 // Display specific function filter for ANNOY function
 function displayMoreAnnoy() {
     var annoy = document.getElementById("annoy");
-    var kill = document.getElementById("specifickill")
+    var kill = document.getElementById("specifickill");
     var text = document.getElementById("specificannoy");
 
     //uncheck all specific functions that could be checked previously
@@ -81,14 +81,8 @@ function tickAllBoxes() {
     $(`input[name='${name}']`).prop("checked", true);
 }
 
-//var chosenPantheon;
-//var chosenClass;
-//var chosenFunction;
-//var chosenSpecFunc;
-
 //MAIN FUNCTION triggered by submit button
-function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) {
-
+function lookForGod() {
 
     // creating an array with chosen pantheon
     var chosenPantheon = [];
@@ -164,7 +158,7 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
 
         for (i = 0; i < specfunc.length; i++) {
             if (specfunc[i].checked) {
-                chosenSpecFunc.push(specfunc[i].value)
+                chosenSpecFunc.push(specfunc[i].value);
             }
         }
         // Display warning if KILL is checked but no specific function
@@ -172,7 +166,6 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
             alert('Choose how you want to kill your enemies');
             return;
         }
-
     }
     else if ($('#annoy').is(':checked')) {
         //create array for specific function for ANNOY
@@ -189,9 +182,6 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
             return;
         }
     }
-
-
-    //--------it works! :)
 
     //Rules for filtering the result
     // variable gods is specified in gods.js
