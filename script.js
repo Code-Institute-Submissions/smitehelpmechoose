@@ -219,7 +219,7 @@ function lookForGod() {
         var noSpacesName = chosenGod.name.replace(/\s/g, "").replace(/'/, "");
         //add godicon key and its value
         Object.defineProperty(chosenGod, 'godicon', {
-            value: `gods/T_${noSpacesName}_Default_Icon.png`,
+            value: `assets/gods/T_${noSpacesName}_Default_Icon.png`,
             writable: false
         });
     }
