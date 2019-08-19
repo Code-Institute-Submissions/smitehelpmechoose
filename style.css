@@ -47,6 +47,7 @@ a:active {
     text-align: center;
 }
 
+/* style for clear all selection button */ 
 .clear {
     display: inline-block;
     position: absolute;
@@ -65,26 +66,16 @@ a:active {
 }
 
 form {
-
     margin-top: 0px;
 }
 
-/*.wrap {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 0 15px 0px;
-}*/
-
+/* icons for filters not displayed on smallest screens */ 
 .searchicon {
     display: none;
 }
 
 /* makes checkbox invisible */
-
 /* position relative 40px to prevent it from taking space */
-
 input[type=checkbox],
 input[type=radio] {
     opacity: 0;
@@ -93,7 +84,6 @@ input[type=radio] {
 }
 
 /* visible part of the checkbox*/
-
 input[type=checkbox]+label,
 input[type=radio]+label {
     -webkit-filter: grayscale(100%);
@@ -117,7 +107,7 @@ input[type=radio]:checked+label {
     background-image: url('buttonbackground.jpg');
 }
 
-/* overwriting Boostrap class */
+/* overwriting some Boostrap button properties */
 
 .btn {
     margin: 0 auto;
@@ -165,8 +155,7 @@ input[type=radio]:checked+label {
     display: block;
 }
 
-/* explanation div at the bottom */
-
+/* divider element between result and explanation divs */ 
 .divider {
     margin-left: auto;
     margin-right: auto;
@@ -174,6 +163,7 @@ input[type=radio]:checked+label {
     width: 100px;
 }
 
+/* explanation div at the bottom */
 #explainme {
     width: 80%;
     font-size: 1em;
@@ -224,7 +214,7 @@ input[type=radio]:checked+label {
     .searchicon {
         display: block;
         width: 90px;
-        float: center;
+        margin:0 auto;
     }
     .specificicon {
         width: 50px;
