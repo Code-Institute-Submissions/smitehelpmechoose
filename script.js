@@ -67,7 +67,7 @@ function clearSpecific() {
 function clearAllCheckboxes() {
     var kill = document.getElementById("specifickill");
     var annoy = document.getElementById("specificannoy");
-    
+
     $("#filter :input").prop("checked", false);
     kill.style.display = "none";
     annoy.style.display = "none";
@@ -244,7 +244,10 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
         });
     }
 
-    var displayChosen = chosenPantheon + " | " + chosenClass + " | " + chosenFunction + " | " + chosenSpecFunc;
+    // turns all values chosen by user into a string
+    var stringChosen = chosenPantheon + " | " + chosenClass + " | " + chosenFunction + " | " + chosenSpecFunc;
+    // adds spaces between the values for better readability
+    var displayChosen = stringChosen.replace(/,/g, ", ");
 
     function returnGodInfo() {
         try {
@@ -274,7 +277,9 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
             $("#result")[0].scrollIntoView();
         }
         catch (err) {
-            $('#result').html(`God fulfilling criteria not found. <BR> Broaden your search by choosing more filters.`)
+            // displays error message when chosenGod is empty
+            $('#result').html(`God fulfilling criteria not found. <BR> Broaden your search by choosing more filters.`);
+            $("#result")[0].scrollIntoView();
         }
     }
     returnGodInfo();
