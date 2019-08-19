@@ -11,6 +11,7 @@ It includes a couple of different filters that will allow the user to narrow dow
     * [Project Goals](#project-goals)
     * [User Goals](#user-goals)
     * [User Stories](#user-stories)
+    * [Testing](#testing)
 * [Design](#design)
 * [Features](#features)
 * [Deployment](#deployment)
@@ -46,6 +47,23 @@ They don't know many gods but own most of them. They will go for the "annoy" fun
 
 While “annoy” function is quite subjective, gods assigned it were chosen based not only on my and my teammates' experience but also on several Reddit threads from Smite subreddit. 
 
+### Testing
+#### Testing scenarios
+
+Following testing scenarios have been checked manually in different browsers (Google Chrome, Firefox, Internet Explorer) and on different devices (Windows and Android). 
+
+1. User selects only specific function without changing the state of any default boxes.
+    1. The result is easy to identify and understand.
+    2. Clicking on main button for search re-rolls the result randomly.
+    3. Clicking on the link to gamepedia opens the page with chosen god's abilities in a new tab
+2. User clear all boxes and selects certain pantheon(s), class(es), function and specific function
+    1. Option to clear all boxes is easy to find and understand
+    2. "All" buttons make it easy to select all checkboxes in each filter
+    3. Specific function filter follows up the main function filter in intuitive way
+3. User tries to search for a god without selecting a function or specific function (if available)
+    1. Makes sure alerts display correctly and indicate what action is necessary in order to start search
+    2. In case of unselecting all pantheons or classes, the form displays short information suggesting to broaden the search by using more filters. 
+
 ## Design 
 ### Icons
 All icons used in this project are the exact copy of these used in-game. Gods, pantheons and classes icons can be found on the gods' selection screen.
@@ -55,24 +73,23 @@ The images used for illustrating function filter come from in-game relics with t
 The images are part of the filters along with their names to make using the site easy for both experienced and inexperienced SMITE players. 
 
 ### Colours
-All colours follow both SMITE UI and Official SMITE Wiki. They were slightly adjusted to conform to contrast rules. 
+All colours follow both SMITE UI and Official SMITE Wiki. They were slightly adjusted to conform to contrast rules and to ensure that filters indicators are clear even with colour deficiency. 
 
 ## Features
 ### Existing Features
 
-1. ReadMe File
-2. JavaScript focused development
-3. Colour Scheme
-4. Favicon
-5. Custom HTML and CSS 
-6. Icons
-7. Responsive design - Mobile First
-8. UX elements
-9. User Flow
+1. ReadMe File - holding basic information on the development of this project
+2. JavaScript focused development 
+3. Colour Scheme - following closely official game colours
+4. Favicon 
+5. Custom HTML and CSS - with a tiny addition of Boostrap
+6. Icons - making understaning what the user is looking at easier at glance
+7. Responsive design - mobile-first
+8. UX elements 
+9. Streamlined user flow
 10. Accessibility
-11. Git - Version Control System
-12. GitHub - Remote Repository
-13. Deployed - Hosted on Github Pages
+11. Remote repository on GitHub
+13. Page hosted on Github Pages
 
 ### Planned Features 
 1. Adding remaining pantheons to the filter
@@ -110,6 +127,7 @@ This project wouldn't be born without HiRez developers and creators who give lif
 
 It also wouldn't be nearly as functional as it is without Code Institute, its Slack community and my mentor Seun Owonikoko. 
 
+Special thanks to Jakub Kołaciński who over 192 hours of playtime ago accepted my invitation to SMITE and hadn't rage quit yet :)
 
 ### Disclaimer 
 This is intended for entertainment purposes. I’m not responsible for your bad KDA ratio ;)
