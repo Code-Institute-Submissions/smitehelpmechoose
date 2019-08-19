@@ -25,7 +25,7 @@
     <a href="#" onclick="clearAllCheckboxes()" class="clear">Clear all selection</a>
     <form id="filter">
         <h3>Which pantheon?</h3>
-        <div class="wrap"><input type="checkbox" id="whateverpantheon" name="pantheon" onclick="tickAllBoxes(this)" checked/><label for="whateverpantheon">All</label>
+        <div class="wrap"><input type="checkbox" id="whateverpantheon" name="pantheon" onclick="tickAllBoxes(this)" /><label for="whateverpantheon">All</label>
             <input type="checkbox" id="chinese" class="pantheon1" name="pantheon" value="chinese" checked/><label for="chinese"><img src="pantheons/chinese.png" class="searchicon">Chinese</label>
             <input type="checkbox" id="egyptian" class="pantheon2" name="pantheon" value="egyptian" checked/><label for="egyptian"><img src="pantheons/egyptian.png" class="searchicon">Egyptian</label>
             <input type="checkbox" id="greek" class="pantheon3" name="pantheon" value="greek" checked/><label for="greek"><img src="pantheons/greek.png" class="searchicon">Greek</label>
@@ -62,15 +62,15 @@
             <input type="checkbox" id="specifickill3" name="specifickill" value="execute" /> <label for="specifickill3"> <img src="functions/specific/execute.png" class="searchicon specificicon">Execute</label>
         </p>
         <br>
-        <button type=button class="btn btn-dark" value=submit onclick="lookForGod()">Easy... Let's go!</button>
+        <button type=button class="btn btn-dark" id="triggerbutton" value=submit onclick="lookForGod()">Easy... Let's go!</button>
 
     </form>
     <div id="result">
 
     </div>
 
-    <div id="explainme"><img src="eye.png" class="divider"><p class="explainme">How does it work?</p><br>
-        Select one or more <i>pantheons</i> to choose the god from. Currently, there are 72 gods from 5 pantheons available.
+    <div id="explainme"><img src="eye.png" class="divider">
+        <h4>How does it work?</h4> Select one or more <i>pantheons</i> to choose the god from. Currently, there are 72 gods from 5 pantheons available.
         <br>
         <br> Select one or more <i>class</i> to choose the god from. Guardians, warriors and assasins have melee attacks while hunters and mages are ranged.
         <br>Guardians and mages' use magical power, the rest uses physical power.

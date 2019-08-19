@@ -264,7 +264,7 @@ function lookForGod() {
                             <h3 style="text-align: center; color: #FFF975;">Enjoy!</h3>
                             </div>
                             `);
-            $("#result")[0].scrollIntoView();
+            $("#triggerbutton")[0].scrollIntoView();
         }
         catch (err) {
             // displays error message when chosenGod is empty
