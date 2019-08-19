@@ -1,10 +1,10 @@
 # Help me choose! 
-## Smite companion app for undecided
+## Smite companion app for the undecided
 
-Smite - Help me choose is a small web app allowing undecided players to choose a god they will play in the next arena game. 
+*Smite - Help me choose* is a small web app allowing undecided players to choose a god they will play in the next game. 
 It includes a couple of different filters that will allow the user to narrow down the results to, optimally, one god. 
 
-[View the Smite - Help me choose page](https://ardhanari.github.io/smitehelpmechoose/)
+[View the *Smite - Help me choose* page](https://ardhanari.github.io/smitehelpmechoose/)
 
 ## Table of content
 * [UX](#ux)
