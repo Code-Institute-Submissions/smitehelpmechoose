@@ -269,9 +269,9 @@ function lookForGod( /*pantheon, smiteclass, preffunction, specificfunction*/ ) 
                             <a href="${chosenGod.wikipage}#Abilities" target="_blank">Read more about this god's abilities on gamepedia</a>
                             
                             <p class="youchose">Because you chose following values: ${displayChosen}</p>
-                            <p class="note">{note}</p>
+                            <p class="note">${chosenGod.note} </p>
                             
-                            <h3 style="text-align: center;">Enjoy!</h3>
+                            <h3 style="text-align: center; color: #FFF975;">Enjoy!</h3>
                             </div>
                             `);
             $("#result")[0].scrollIntoView();

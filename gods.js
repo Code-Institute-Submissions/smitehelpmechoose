@@ -8,7 +8,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "execute",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Execute enemies on your ultimate."
   },
   {
     "name": "Anhur",
@@ -19,7 +20,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Anhur is one swift and killing lion. Build for critical chance combined with ulti = killing spree, and fast!"
   },
   {
     "name": "Anubis",
@@ -30,7 +32,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Ao Kuang",
@@ -41,7 +44,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "execute",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Stealth, bonus damage from abilities and during your ultimate you can execute your enemies and then turn into giant dragon. Do your best!"
   },
   {
     "name": "Aphrodite",
@@ -50,9 +54,10 @@ var gods = [
     "powertype": "magical",
     "smiteclass": "mage",
     "preffunction1": "heal",
-    "preffunction2": "",
+    "preffunction2": "protect",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Not only she can heal others with her birds (3), she can also push enemies back with her 2 and provide invincibility with her ultimate. Oh, and as a bonus, her 1 can also stun enemy and provide buff for your ally. <BR> Get used to these birds chirping!"
   },
   {
     "name": "Apollo",
@@ -63,7 +68,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "God of many things but in smite mostly of music and running faster than most. He's not only fast, he also posseses dash, as well as ultimate which allows him to drop anywhere on map. Easy in, out and out-and-in way to teamfights."
   },
   {
     "name": "Arachne",
@@ -74,7 +80,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Late game and her basic attacks simply melt down enemies."
   },
   {
     "name": "Ares",
@@ -85,7 +92,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Try your ultimate with high cooldown reduction. And with Blink. And if someone survives, use chains to slow them down. If your team follows you, enemies may surrender sooner than you expect."
   },
   {
     "name": "Artemis",
@@ -96,7 +104,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "kill",
     "subfunction1": "cc",
-    "subfunction2": "crit"
+    "subfunction2": "crit",
+    "note": "She can place roots and her ulti stuns all enemies one by one, so no teamwork is easy for them."
   },
   {
     "name": "Athena",
@@ -107,7 +116,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "just annoy",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Annoying, ah, yes, she is! To enemies mostly because her long taunts. And ultimate which allows her drop onto an ally and cause damage around her. To allies too, when she spams charching her dash non-stop. It makes a sound, you know, and after a while you'll pray for enemies ganking to keep her occupied."
   },
   {
     "name": "Bacchus",
@@ -118,7 +128,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "just annoy",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "He gets drunk. He's a god of wine after all. The more drunk he gets, the more powerful his burps are and the more ovewhelming his smashed jug... I mean, his ultimate is. <br> He can be disgustingly annoying not only thanks to how he sounds but also to amount of crowd control he posses."
   },
   {
     "name": "Bastet",
@@ -128,8 +139,9 @@ var gods = [
     "smiteclass": "assassin",
     "preffunction1": "kill",
     "preffunction2": "",
-    "subfunction1": "",
-    "subfunction2": ""
+    "subfunction1": "truedmg",
+    "subfunction2": "",
+    "note": "Invest in cooldown reduction. Your ultimate is as annoying as it can be deadly."
   },
   {
     "name": "Bellona",
@@ -137,10 +149,11 @@ var gods = [
     "attacktype": "melee",
     "powertype": "physical",
     "smiteclass": "warrior",
-    "preffunction1": "",
+    "preffunction1": "kill",
     "preffunction2": "",
-    "subfunction1": "",
-    "subfunction2": ""
+    "subfunction1": "truedmg",
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Cerberus",
@@ -151,7 +164,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "kill",
     "subfunction1": "cc",
-    "subfunction2": "truedmg"
+    "subfunction2": "truedmg",
+    "note": "He can kill, he can annoy enemies by throwing them into teamfights when they try to escape or slow them down significantly, he can also heal himself and allies. He also has 3 heads. Good doggo."
   },
   {
     "name": "Chang'e",
@@ -162,7 +176,8 @@ var gods = [
     "preffunction1": "heal",
     "preffunction2": "kill",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "She can heal and she can kill and she can also avoid a lot of damage just like that. If you look for easy and viable healer, look no further."
   },
   {
     "name": "Chiron",
@@ -173,7 +188,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "mobility",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Half-man, half-horse. He can crit beautifully, but he's also really mobile in and out of fights. And if you find yourself stuck, remember that his 1 not only damages enemies, but also cleanses you from any crowd control. Use this before your 3 and you're safely out!"
   },
   {
     "name": "Chronos",
@@ -184,7 +200,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "stun",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "This man can do a lot of damage but most annoying part of facing Chronos? His stuns every couple of seconds. Just no. No."
   },
   {
     "name": "Cupid",
@@ -192,10 +209,11 @@ var gods = [
     "attacktype": "ranged",
     "powertype": "physical",
     "smiteclass": "Hunter",
-    "preffunction1": "mobility",
+    "preffunction1": "annoy",
     "preffunction2": "heal",
-    "subfunction1": "",
-    "subfunction2": ""
+    "subfunction1": "stun",
+    "subfunction2": "",
+    "note": "Hunter, yes, in right hands he kills with a snap of his fingers. But on top of that he can heal himself and others and annoy enemies with his stuns (yes, more than one). <br> Also, if you have a voicepack, VGS waits to be used. Spam commands only if you want to annoy your teammates as well."
   },
   {
     "name": "Da Ji",
@@ -206,7 +224,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "mobility",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Leap to enemy/ally, buff to movement speed and her ultimate that can save her life and cost a life of an enemy. What's not to like?"
   },
   {
     "name": "Discordia",
@@ -217,7 +236,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "just annoy",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Ah, the goddes of discord. Pay attention and use your 2 and ultimate wisely (which sometimes mean \"all the time\"). There's nothing more annoying than first being forced to fight your ally, then getting hit by giant golden apple, then spread the apple to others (and probably being flamed for that) and die from getting hit by her 1 ricocheting. <br> Good time for Discordia, bad time for the enemies."
   },
   {
     "name": "Erlang Shen",
@@ -228,7 +248,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Fafnir",
@@ -239,7 +260,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Fenrir",
@@ -250,7 +272,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Freya",
@@ -261,7 +284,8 @@ var gods = [
     "preffunction1": "",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Geb",
@@ -272,7 +296,8 @@ var gods = [
     "preffunction1": "protect",
     "preffunction2": "annoy",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Guan Yu",
@@ -283,7 +308,8 @@ var gods = [
     "preffunction1": "heal",
     "preffunction2": "mobility",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Dash + horseriding while being cc immune. And you can heal yourself and others. If you know what you're doing that also means not dying for a long time."
   },
   {
     "name": "Hades",
@@ -294,7 +320,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "He Bo",
@@ -305,7 +332,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "kill",
     "subfunction1": "just annoy",
-    "subfunction2": "truedmg"
+    "subfunction2": "truedmg",
+    "note": ""
   },
   {
     "name": "Hel",
@@ -316,7 +344,8 @@ var gods = [
     "preffunction1": "heal",
     "preffunction2": "protect",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "It's like two gods for the price of one. She can do damage but she also heals and clenses allies and after she switches stances she shares the benefits of that with others. Keeping others alive has never been that easy."
   },
   {
     "name": "Hera",
@@ -327,7 +356,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Hera turns her enemies into animals and drops a giant mech on them. That's in short."
   },
   {
     "name": "Hercules",
@@ -338,7 +368,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Horus",
@@ -346,10 +377,11 @@ var gods = [
     "attacktype": "melee",
     "powertype": "physical",
     "smiteclass": "warrior",
-    "preffunction1": "protect",
+    "preffunction1": "heal",
     "preffunction2": "mobility",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Recent addition to god pool: majestic birbo. He protecc, he attacc but most importantly he does not give... <br> No, really, he has defenses up so high that he can withstand a lot of damage and not blink an eye. Not so squishy as some other warriors, he has two dashes (one of them heals allies in the area) and ultimate that allows him to fly quite significant distance - and also to carry some other teammates with him."
   },
   {
     "name": "Hou Yi",
@@ -360,7 +392,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "mobility",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "He flies for longer than some birds in the game. I guess that counts a lot for mobility. <br> Don't forget you can stun marked enemies with your 1 and that your ultimate not ony deals damage but slows them down A LOT too."
   },
   {
     "name": "Isis",
@@ -371,7 +404,8 @@ var gods = [
     "preffunction1": "protect",
     "preffunction2": "kill",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "She's intended to be protective support... I guess? But what she does amazing is also killing enemies. Use your 1 to be fast and deadly, use your 2 to be stunning and deadly, use your ultimate to be... well, deadly (and helpful to your allies too!)"
   },
   {
     "name": "Janus",
@@ -382,7 +416,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Make yourself faster and slow your enemies. Your portals can, well, teleport you through obstacles and walls. The art of disappearing is your art and going from A to B has never been easier."
   },
   {
     "name": "Jing Wei",
@@ -393,7 +428,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "mobility",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Her passive offers flying out of the fountain. Then she has dash and ultimate which is also dash but more like an airstrike."
   },
   {
     "name": "Jormungandr",
@@ -404,7 +440,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "He's a big guy and he can cross half of the map with his ulti. He can be invisible and fast too. Somehow being giant dragon doesn't make invisibility part harder for him."
   },
   {
     "name": "Khepri",
@@ -415,7 +452,8 @@ var gods = [
     "preffunction1": "protect",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Loki",
@@ -426,7 +464,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "just annoy",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "What are you doing here? You knew Loki is the answer way before you pressed that button."
   },
   {
     "name": "Medusa",
@@ -437,7 +476,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Mercury",
@@ -448,7 +488,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "kill",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Ne Zha",
@@ -459,7 +500,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Neith",
@@ -470,7 +512,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Nemesis",
@@ -481,7 +524,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Nike",
@@ -492,7 +536,8 @@ var gods = [
     "preffunction1": "protect",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Nox",
@@ -503,7 +548,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "annoy",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Nu Wa",
@@ -514,7 +560,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "stun",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Odin",
@@ -525,7 +572,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Osiris",
@@ -536,7 +584,8 @@ var gods = [
     "preffunction1": "",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Persephone",
@@ -547,7 +596,8 @@ var gods = [
     "preffunction1": "",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Poseidon",
@@ -558,7 +608,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "Your 1 pushes enemies, your 3 drags them and slows them and your ultimate is a GIANT KRAKEN throwing everyone into the air. You know, you want to play him."
   },
   {
     "name": "Ra",
@@ -569,7 +620,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "heal",
     "subfunction1": "just annoy",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": "1. Spamming [VEL] Laugh will definitely annoy your teammates early in the game <br> 2. with Chibi Ra skin just play the game and your abilities will make everyone on both teams scream internally <br> 3. With 40% reduction cooldowns and a bit of sniper reflex you will make opposing teams game a nightmare"
   },
   {
     "name": "Ratatoskr",
@@ -580,7 +632,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "mobility",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Scylla",
@@ -591,7 +644,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Serqet",
@@ -602,7 +656,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Set",
@@ -613,7 +668,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "just annoy",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Skadi",
@@ -624,7 +680,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "crit",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Sobek",
@@ -635,7 +692,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Sol",
@@ -646,7 +704,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Sun Wukong",
@@ -657,7 +716,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "mobility",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Sylvanus",
@@ -668,7 +728,8 @@ var gods = [
     "preffunction1": "heal",
     "preffunction2": "annoy",
     "subfunction1": "cc",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Terra",
@@ -679,7 +740,8 @@ var gods = [
     "preffunction1": "heal",
     "preffunction2": "protect",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Thanatos",
@@ -690,7 +752,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "just annoy",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Thor",
@@ -701,7 +764,8 @@ var gods = [
     "preffunction1": "mobility",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Thoth",
@@ -711,8 +775,9 @@ var gods = [
     "smiteclass": "mage",
     "preffunction1": "kill",
     "preffunction2": "",
-    "subfunction1": "",
-    "subfunction2": ""
+    "subfunction1": "truedmg",
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Tyr",
@@ -723,7 +788,8 @@ var gods = [
     "preffunction1": "",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Ullr",
@@ -734,7 +800,8 @@ var gods = [
     "preffunction1": "",
     "preffunction2": "",
     "subfunction1": "",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Vulcan",
@@ -742,10 +809,11 @@ var gods = [
     "attacktype": "ranged",
     "powertype": "magical",
     "smiteclass": "mage",
-    "preffunction1": "kill",
+    "preffunction1": "annoy",
     "preffunction2": "",
-    "subfunction1": "",
-    "subfunction2": ""
+    "subfunction1": "just annoy",
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Xing Tian",
@@ -756,7 +824,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "kill",
     "subfunction1": "cc",
-    "subfunction2": "truedmg"
+    "subfunction2": "truedmg",
+    "note": "Root your enemies or throw them using your axe. Or both, you can do both."
   },
   {
     "name": "Ymir",
@@ -767,7 +836,8 @@ var gods = [
     "preffunction1": "annoy",
     "preffunction2": "",
     "subfunction1": "stun",
-    "subfunction2": "cc"
+    "subfunction2": "cc",
+    "note": ""
   },
   {
     "name": "Zeus",
@@ -778,7 +848,8 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   },
   {
     "name": "Zhong Kui",
@@ -789,6 +860,7 @@ var gods = [
     "preffunction1": "kill",
     "preffunction2": "",
     "subfunction1": "truedmg",
-    "subfunction2": ""
+    "subfunction2": "",
+    "note": ""
   }
-]
+];
