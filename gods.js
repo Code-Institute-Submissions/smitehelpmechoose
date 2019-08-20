@@ -1,4 +1,4 @@
-[
+var gods = [
   {
     "name": "Achilles",
     "pantheon": "greek",
