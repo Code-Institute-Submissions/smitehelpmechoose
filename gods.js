@@ -1,4 +1,4 @@
-var gods = [
+[
   {
     "name": "Achilles",
     "pantheon": "greek",
@@ -273,7 +273,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "",
     "subfunction2": "",
-    "note": ""
+    "note": "If you want to make your enemy just as mobile as you, grab them with your jaws and carry towards your allies. I'm sure they'll appreciate it."
   },
   {
     "name": "Freya",
@@ -453,7 +453,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "",
     "subfunction2": "",
-    "note": ""
+    "note": "Khepri can resurrect fallen teammate or even himself. It really is <i>ultimate</i> protection."
   },
   {
     "name": "Loki",
@@ -473,11 +473,11 @@ var gods = [
     "attacktype": "ranged",
     "powertype": "physical",
     "smiteclass": "hunter",
-    "preffunction1": "kill",
+    "preffunction1": "mobility",
     "preffunction2": "",
-    "subfunction1": "crit",
+    "subfunction1": "",
     "subfunction2": "",
-    "note": ""
+    "note": "Strafing left and right faster than for other gods may not look impressive. Try it out dodging enemy's basic attacks and then shooting them yourself."
   },
   {
     "name": "Mercury",
@@ -489,7 +489,7 @@ var gods = [
     "preffunction2": "kill",
     "subfunction1": "crit",
     "subfunction2": "",
-    "note": ""
+    "note": "Fastest movement speed in game and ultimate dash through entire map."
   },
   {
     "name": "Ne Zha",
@@ -501,7 +501,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "crit",
     "subfunction2": "",
-    "note": ""
+    "note": "Guaranteed critical hits for abilities and damage that spreads to other enemies. It's like very good multitasking, where the task is to kill someone."
   },
   {
     "name": "Neith",
@@ -513,7 +513,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "crit",
     "subfunction2": "",
-    "note": ""
+    "note": "Neith may be easy to pick up and easy to master but it's always pleasure to hit someone from across the map and get a kill. Or to root three people in place and send the arrows on them. Or to just jump out of range last minute when someone tries to stun you and laugh in their face."
   },
   {
     "name": "Nemesis",
@@ -525,7 +525,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "truedmg",
     "subfunction2": "",
-    "note": ""
+    "note": "Dash, kill, dash again. Rinse, repeat."
   },
   {
     "name": "Nike",
@@ -549,7 +549,7 @@ var gods = [
     "preffunction2": "annoy",
     "subfunction1": "cc",
     "subfunction2": "",
-    "note": ""
+    "note": "Silence, root, and dash, all in one goddess. She is annoying, she is fast and she can be very deadly."
   },
   {
     "name": "Nu Wa",
@@ -561,7 +561,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "stun",
     "subfunction2": "",
-    "note": ""
+    "note": "Invest in cooldown reduction and mana. Then spend it all on spawning your minions and detonating them to stun enemies. Easy! Bonus points for using your ultimate when your enemies are running away on low health. Now THIS is really annoying."
   },
   {
     "name": "Odin",
@@ -569,11 +569,11 @@ var gods = [
     "attacktype": "melee",
     "powertype": "physical",
     "smiteclass": "warrior",
-    "preffunction1": "mobility",
+    "preffunction1": "annoy",
     "preffunction2": "",
-    "subfunction1": "",
+    "subfunction1": "cc",
     "subfunction2": "",
-    "note": ""
+    "note": "Now this was hard to assign. Is Odin a killing machine? Is he mobile enough? Or is he just annoying with his huge cage that suddenly locks teamfights in a very small space? Yeah, he is that for sure. And someone will have to waste relic place to just get everyone free while they are screaming \"lettt meeeee ouuuutttt\"."
   },
   {
     "name": "Osiris",
@@ -633,7 +633,7 @@ var gods = [
     "preffunction2": "mobility",
     "subfunction1": "truedmg",
     "subfunction2": "",
-    "note": ""
+    "note": "As a god-like squirrel you don't wear shoes but still have better movement speed than half of the gods in game. It's one of these assassins when people start spamming \"Behind us!\" when they see you jumping across the sky."
   },
   {
     "name": "Scylla",
@@ -645,7 +645,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "truedmg",
     "subfunction2": "",
-    "note": ""
+    "note": "<a href=\"https://www.youtube.com/watch?v=6CqBlyA0vaY\" target=\"_blank\">\"I'm a monster!\"</a>"
   },
   {
     "name": "Serqet",
@@ -657,7 +657,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "",
     "subfunction2": "",
-    "note": ""
+    "note": "Three abilities have movement included."
   },
   {
     "name": "Set",
@@ -669,7 +669,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "just annoy",
     "subfunction2": "",
-    "note": ""
+    "note": "Annoy... I don't know who more - yourself or enemies? Either them with your little cute sand clones if you know how to handle them and you appearing out of nowhere and wayyy too close, or yourself if the team is not really reliable and more teamfights end up with ulti wasted rather than used."
   },
   {
     "name": "Skadi",
@@ -681,7 +681,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "crit",
     "subfunction2": "",
-    "note": ""
+    "note": "She lets the dog out. <br> Also one word: Permafrost. Make them slide, make them slide a lot."
   },
   {
     "name": "Sobek",
@@ -693,7 +693,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "cc",
     "subfunction2": "",
-    "note": ""
+    "note": "Dash, stun, throw behind the back, spin around to throw them in the air. Rinse, repeat."
   },
   {
     "name": "Sol",
@@ -705,7 +705,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "truedmg",
     "subfunction2": "",
-    "note": ""
+    "note": "Both basic attacks and abilities are equally useful and she can survive and fight both short (1, 2, 4) and long range (2, 4). <br> Bonus points if you kill someone accidentally while running away with your 3."
   },
   {
     "name": "Sun Wukong",
@@ -717,7 +717,7 @@ var gods = [
     "preffunction2": "mobility",
     "subfunction1": "cc",
     "subfunction2": "",
-    "note": ""
+    "note": "It may take a game or two to figure out how to play him."
   },
   {
     "name": "Sylvanus",
@@ -729,7 +729,7 @@ var gods = [
     "preffunction2": "annoy",
     "subfunction1": "cc",
     "subfunction2": "",
-    "note": ""
+    "note": "Remember: the actual god is this little guy on the tree, not tree itself!"
   },
   {
     "name": "Terra",
@@ -741,7 +741,7 @@ var gods = [
     "preffunction2": "protect",
     "subfunction1": "",
     "subfunction2": "",
-    "note": ""
+    "note": "Duel two Terras is painfully boring, as they can heal for the amout of damage they receive. More or less."
   },
   {
     "name": "Thanatos",
@@ -753,7 +753,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "just annoy",
     "subfunction2": "",
-    "note": ""
+    "note": "There's so many thing annoying about this god... If you played Smite before, you know exactly what I'm talking about."
   },
   {
     "name": "Thor",
@@ -765,7 +765,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "",
     "subfunction2": "",
-    "note": ""
+    "note": "You can dash using your 1, your ultimate let you drop on the map and do it quite fast. It's deadly too, especially after latest buff."
   },
   {
     "name": "Thoth",
@@ -777,7 +777,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "truedmg",
     "subfunction2": "",
-    "note": ""
+    "note": "Skinny birb using ancient Egyptian magic. Your 3 makes all ranged attacks hitting harder. Use it against objectives and enemies, with your basics and basically everything you have. <br> Ouch."
   },
   {
     "name": "Tyr",
@@ -813,7 +813,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "just annoy",
     "subfunction2": "",
-    "note": ""
+    "note": "You will be frustrating on maps limited with walls. Your cannon will block the way, bomb will knock back enemies and ultimate is... Well, it is bigger than everything else in the game."
   },
   {
     "name": "Xing Tian",
@@ -837,7 +837,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "stun",
     "subfunction2": "cc",
-    "note": ""
+    "note": "Btw. Put that announcer pack up. <a href=\"https://www.youtube.com/watch?v=vl-aEzQOBBU\" target=\"_blank\">\"Cooler than Ymir's toes\"</a>"
   },
   {
     "name": "Zeus",
@@ -849,7 +849,7 @@ var gods = [
     "preffunction2": "",
     "subfunction1": "truedmg",
     "subfunction2": "",
-    "note": ""
+    "note": "Just charge these charges and don't forget to detonate them. EASY."
   },
   {
     "name": "Zhong Kui",
