@@ -1,6 +1,8 @@
 # Help me choose! 
 ## Smite companion app for the undecided
 
+![Responsive view of the app](readme-img.png)
+
 *Smite - Help me choose* is a small web app allowing undecided players to choose a god they will play in the next game. 
 It includes a couple of different filters that will allow the user to narrow down the results to, optimally, one god. 
 
@@ -102,9 +104,10 @@ All colours follow both SMITE UI and Official SMITE Wiki. They were slightly adj
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) for the structure,
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) for styling,
 - [Bootstrap](https://getbootstrap.com) for planned modals (not implemented in final version) and part of styling,
-- [JavaScript](https://developer.mozilla.org/pl/docs/Web/JavaScript) for implementing main functionality,
+- [JavaScript](https://developer.mozilla.org/pl/docs/Web/JavaScript) for main functionality implementation,
 - [JQuery](https://jquery.com) for easier DOM manipulation,
-- [Jigsaw]() and [JSHint]() for testing integrity of code (CSS and JS respectively), 
+- [csv2json](https://www.csvjson.com/csv2json) to convert all data from .csv to array of objects,
+- [Jigsaw](https://jigsaw.w3.org/css-validator/) and [JSHint](https://jshint.com) for testing integrity of code (CSS and JS respectively), 
 - [Google Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Internet Explorer](https://www.microsoft.com/en-us/download/internet-explorer.aspx) used for testing the app,
 - [Google Chrome](https://www.google.com/chrome/)’s dev tools for live testing and monitoring and responsiveness testing,
 - [Am I Responsive?](http://ami.responsivedesign.is/) for further responsiveness testing,
